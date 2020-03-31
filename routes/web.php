@@ -25,5 +25,4 @@ Route::get('courses', 'CourseController@listCourses')->name('courses');
 Route::get('course/{course}', 'CourseController@viewCourse')->name('view-course');
 Route::get('course/{course}/enroll', 'CourseController@enrollOnCourse')
     ->name('enroll-on-course')
-    ->middleware('auth')
-;
+    ->middleware('auth');
